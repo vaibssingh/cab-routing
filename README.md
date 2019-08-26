@@ -1,4 +1,4 @@
-# cab_routing  
+# Cab Routing  
 Approach for solution:
 - Read the file and store the coordinate values for the passengers, cabs and final destination.
 - Depending on the number of passengers, create their location grouping [lat, long] using k-means cluterization.
