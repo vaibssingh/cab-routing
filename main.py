@@ -56,7 +56,7 @@ passenger_coordinates_np = np.array(passenger_coordinates).astype(np.float)
 cab_coordinates_np = np.array(cab_coordinates).astype(np.float)
 destination_coordinate_np = np.array(destination_coordinate).astype(np.float)
 
-# applying the kmeans2 cluterisation method
+# applying the kmeans2 cluterisation method (creating three clusters here based upon distribution as seen in graph)
 passenger_group_coordinates, y = kmeans2(passenger_coordinates_np, 3, iter=10)
 
 def find_destination_distance(passenger_coordinates_np, destination_coordinate_np):
